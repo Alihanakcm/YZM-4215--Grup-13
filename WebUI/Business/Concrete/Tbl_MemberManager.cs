@@ -37,5 +37,11 @@ namespace Business.Concrete
         {
             _Tbl_MemberDal.Update(Parameter);
         }
+
+        public Tbl_Member LoginControlGet(int IDNumberr, string MemberPasswordd)
+        {
+            return _Tbl_MemberDal.Get(x => x.IDNumber == IDNumberr && x.MemberPassword == MemberPasswordd);
+
+        }
     }
 }

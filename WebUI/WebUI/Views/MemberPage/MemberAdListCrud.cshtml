@@ -1,0 +1,333 @@
+﻿@model WebUI.Models.AdViewModel
+
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Ilanlarim";
+}
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="section-bg">
+    @*<a class="btn btn-success btn-round btn-ouutline-success float-right" data-toggle="modal" data-target="#newAdd" id="newAdd">
+            ÜRÜN EKLE
+        </a>*@
+
+    <button type="button" class="btn btn-success btn-round btn-ouutline-success float-right" data-toggle="modal" data-target="#exampleModalCenter">
+        <i class="icofont-plus-circle">
+        </i>
+        ÜRÜN EKLE
+
+    </button>
+    <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+            <h3 class="section-title">İLANLARIM</h3>
+            <p>Buradan yayınlamış olduğunuz ilanları görüntüleyebilirsiniz.</p>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class=" col-lg-12">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">HEPSİ</li>
+                    <li data-filter=".filter-food">YEMEK</li>
+                    <li data-filter=".filter-stuff">EŞYA</li>
+                    <li data-filter=".filter-money">PARA</li>
+                    <li data-filter=".filter-pet">HAYVAN</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            @if (Model != null)
+            {
+                @foreach (var item in Model.ads)
+                {
+                    @if (item.CategoryID == 1)
+                    {
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-food">
+                            <div class="portfolio-wrap">
+                                <form>
+                                    @*<input type="image" src="~/img/delete.png" class="float-right" value="submit" width="25">*@
+                                    <a asp-controller="MemberPage" asp-action="MemberAdDelete" asp-route-id="@item.AdID" class="small-box-footer"><i class="icofont-ui-remove"></i></a>
+                                    <figure>
+                                        <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+
+                                        <a data-title="food" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
+                                        <a class="link-details" title="Daha Fazla Bilgi" asp-controller="MemberPage" asp-action="RequestNewAd"><i class="ion ion-android-open"></i></a>
+                                    </figure>
+                                </form>
+                                <div class="portfolio-info">
+                                    <h4><a href="portfolio-details.html">@item.AdTitle</a></h4>
+                                    <p>@item.AdInfo</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    @if (item.CategoryID == 2)
+                    {
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-stuff">
+                            <div class="portfolio-wrap">
+                                <a asp-controller="MemberPage" asp-action="MemberAdDelete" asp-route-id="@item.AdID" class="small-box-footer"><i class="icofont-ui-remove"></i></a>
+                                <figure>
+                                    <img src="~/img/stuff.jpg" class="img-fluid" alt="">
+                                    <a title="stuff" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
+                                    <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </figure>
+
+                                <div class="portfolio-info">
+                                    <h4><a href="portfolio-details.html">@item.AdTitle</a></h4>
+                                    <p>@item.AdInfo</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    @if (item.CategoryID == 3)
+                    {
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-pet">
+                            <div class="portfolio-wrap">
+                                <a asp-controller="MemberPage" asp-action="MemberAdDelete" asp-route-id="@item.AdID" class="small-box-footer"><i class="icofont-ui-remove"></i></a>
+                                <figure>
+                                    <img src="~/img/pet.jpg" class="img-fluid" alt="">
+                                    <a title="pet" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
+                                    <a asp-controller="MemberPage" asp-action="AdDelete" asp-route-id="@item.AdID"><i class="ion ion-android-delete"></i></a>
+                                    <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </figure>
+
+                                <div class="portfolio-info">
+                                    <h4><a href="portfolio-details.html">@item.AdTitle</a></h4>
+                                    <p>@item.AdInfo</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    @if (item.CategoryID == 4)
+                    {
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-money">
+                            <div class="portfolio-wrap">
+                                <a asp-controller="MemberPage" asp-action="MemberAdDelete" asp-route-id="@item.AdID" class="small-box-footer"><i class="icofont-ui-remove"></i></a>
+                                <figure>
+                                    <img src="~/img/money.jpg" class="img-fluid" alt="">
+                                    <a title="money" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
+                                    <a href="~/img/money.jpg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </figure>
+                                <div class="portfolio-info">
+                                    <h4><a href="portfolio-details.html">@item.AdTitle</a></h4>
+                                    <p>@item.AdInfo</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    @if (item.CategoryID == 5)
+                    {
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <a asp-controller="MemberPage" asp-action="MemberAdDelete" asp-route-id="@item.AdID" class="small-box-footer"><i class="icofont-ui-remove"></i></a>
+                                <figure>
+                                    <img src="assets/img/portfolio/web2.jpg" class="img-fluid" alt="">
+                                    <a title="Web 2" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
+                                    <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </figure>
+
+                                <div class="portfolio-info">
+                                    <h4><a href="portfolio-details.html">Web 2</a></h4>
+                                    <p>Web</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    @if (item.CategoryID == 6)
+                    {
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <a asp-controller="MemberPage" asp-action="MemberAdDelete" asp-route-id="@item.AdID" class="small-box-footer"><i class="icofont-ui-remove"></i></a>
+                                <figure>
+                                    <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
+                                    <a title="App 3" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
+                                    <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </figure>
+
+                                <div class="portfolio-info">
+                                    <h4><a href="portfolio-details.html">App 3</a></h4>
+                                    <p>App</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    @if (item.CategoryID == 7)
+                    {
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+
+                            <div class="portfolio-wrap">
+                                <a asp-controller="MemberPage" asp-action="MemberAdDelete" asp-route-id="@item.AdID" class="small-box-footer"><i class="icofont-ui-remove"></i></a>
+                                <figure>
+                                    <img src="assets/img/portfolio/card1.jpg" class="img-fluid" alt="">
+                                    <a title="Card 1" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
+                                    <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </figure>
+
+                                <div class="portfolio-info">
+                                    <h4><a href="portfolio-details.html">Card 1</a></h4>
+                                    <p>Card</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    @if (item.CategoryID == 8)
+                    {
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                            <div class="portfolio-wrap">
+                                <a asp-controller="MemberPage" asp-action="MemberAdDelete" asp-route-id="@item.AdID" class="small-box-footer"><i class="icofont-ui-remove"></i></a>
+                                <figure>
+                                    <img src="assets/img/portfolio/card3.jpg" class="img-fluid" alt="">
+                                    <a title="Card 3" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
+                                    <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </figure>
+
+                                <div class="portfolio-info">
+                                    <h4><a href="portfolio-details.html">Card 3</a></h4>
+                                    <p>Card</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    @if (item.CategoryID == 9)
+                    {
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <a asp-controller="MemberPage" asp-action="MemberAdDelete" asp-route-id="@item.AdID" class="small-box-footer"><i class="icofont-ui-remove"></i></a>
+                                <figure>
+                                    <img src="assets/img/portfolio/web1.jpg" class="img-fluid" alt="">
+                                    <a title="Web 1" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
+                                    <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                                </figure>
+
+                                <div class="portfolio-info">
+                                    <h4><a href="portfolio-details.html">Web 1</a></h4>
+                                    <p>Web</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            }
+        </div>
+
+    </div>
+</section><!-- End Portfolio Section -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">İlan Ekle</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form asp-controller="MemberPage" asp-action="MemberNewAd" method="post">
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label asp-for="@Model.ad.AdTitle">İlanın başlığını girin:</label>
+                                    <input asp-for="@Model.ad.AdTitle" type="text" class="form-control form-control" placeholder="Başlık" required>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="@Model.ad.AdInfo">İlanın içeriğini girin :</label>
+                                    <input asp-for="@Model.ad.AdInfo" type="text" class="form-control form-control" placeholder="İçerik" required>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="@Model.ad.AdRoleID">İlanın türünü seçin:</label>
+                                    <select asp-for="@Model.ad.AdRoleID" id="ilanRolID" class="form-control">
+                                        <option value="1">Bağış</option>
+                                        <option value="2">Bağış İsteği</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select asp-for="@Model.ad.CategoryID" class="form-control" asp-items="@(new SelectList(Model.allCategories,"CategoryID","CategoryName"))">
+                                        <option value="0">Kategori</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select asp-for="@Model.ad.CityID" class="form-control" asp-items="@(new SelectList(Model.allCity,"CityID","CityName"))">
+                                        <option value="0">Şehirler</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">İlanı Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@if (Model != null)
+{
+    @foreach (var item in Model.ads)
+    {
+
+            <div class="modal fade" id="editAd_@item.AdID" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">İlan Güncelle</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form asp-controller="MemberPage" asp-action="MemberAdUpdate" method="post">
+
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label asp-for="@item.AdTitle">İlanın başlığını girin:</label>
+                                                <input asp-for="@item.AdTitle" name="ad.AdTitle" type="text" class="form-control form-control" placeholder="Başlık" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label asp-for="@item.AdInfo">İlanın içeriğini girin :</label>
+                                                <input asp-for="@item.AdInfo" name="ad.AdInfo" type="text" class="form-control form-control" placeholder="İçerik" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label asp-for="@item.AdRoleID">İlanın türünü seçin:</label>
+                                                <select asp-for="@item.AdRoleID" name="ad.AdRoleID" id="ilanRolID" class="form-control">
+                                                    <option value="1">Bağış</option>
+                                                    <option value="2">Bağış İsteği</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select asp-for="@item.CategoryID" name="ad.CategoryID" class="form-control" asp-items="@(new SelectList(Model.allCategories, "CategoryID", "CategoryName"))">
+                                                    <option value="0">Kategori</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select asp-for="@item.CityID" name="ad.CityID" class="form-control" asp-items="@(new SelectList(Model.allCity, "CityID", "CityName"))">
+                                                    <option value="0">Şehirler</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <input asp-for="@item.MemberID" name="ad.MemberID" type="hidden" class="form-control form-control">
+                                <input asp-for="@item.AdID" name="ad.AdID" type="hidden" class="form-control form-control">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">İlanı Güncelle</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    }
+}

@@ -133,3 +133,57 @@ C:\Users\FATOŞ\Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
 C:\Users\FATOŞ\Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
 C:\Users\FATOŞ\Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.dll
 C:\Users\FATOŞ\Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\BEYZA\Desktop\WebUI\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\BEYZA\Desktop\WebUI\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\BEYZA\Desktop\WebUI\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\BEYZA\Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\BEYZA\Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\BEYZA\Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\BEYZA\Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\BEYZA\Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\BEYZA\Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.pdb

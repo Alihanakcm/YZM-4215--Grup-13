@@ -12,11 +12,21 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WebUI.Filters;
 
 namespace WebUI
 {
     public class Startup
     {
+
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        public IConfiguration Configuration { get; }
+
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ITbl_AdService, Tbl_AdManager>();
@@ -25,6 +35,8 @@ namespace WebUI
             services.AddScoped<ITbl_AdRoleDal, EfTbl_AdRoleDal>();
             services.AddScoped<ITbl_CategoryService, Tbl_CategoryManager>();
             services.AddScoped<ITbl_CategoryDal, EfTbl_CategoryDal>();
+            services.AddScoped<ITbl_CityService, Tbl_CityManager>();
+            services.AddScoped<ITbl_CityDal, EfTbl_CityDal>();
 
 
 
@@ -36,11 +48,13 @@ namespace WebUI
             services.AddScoped<ITbl_RequestDal, EfTbl_RequestDal>();
             services.AddScoped<ITbl_RequestStateService, Tbl_RequestStateManager>();
             services.AddScoped<ITbl_RequestStateDal, EfTbl_RequestStateDal>();
+            services.AddScoped<IView_AdGeneralInfoService, View_AdGeneralInfoManager>();
+            services.AddScoped<IView_AdGeneralInfoDal, EfView_AdGeneralInfoDal>();
 
 
-
+            services.AddMvc();
             services.AddMvc(options => options.EnableEndpointRouting = false);
-            //services.AddScoped<LoginFilter>();
+            services.AddScoped<LoginFilter>();
             services.AddDistributedMemoryCache();
             services.AddSession(options =>
             {

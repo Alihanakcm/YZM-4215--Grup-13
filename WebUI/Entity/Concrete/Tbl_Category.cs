@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Entity.Concrete
 {
-   public class Tbl_Category:IEntity
+    public class Tbl_Category : IEntity
     {
         [Key]
         public int CategoryID { get; set; }

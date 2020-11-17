@@ -11,7 +11,7 @@ namespace Entity.Concrete
         public string MemberName { get; set; }
         public string MemberSurname { get; set; }
         public string MemberMail { get; set; }
-        public int MemberPassword { get; set; }
+        public string MemberPassword { get; set; }
        
     }
 }

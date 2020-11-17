@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FATOŞ\\Desktop\\WebUI\\Entity\\Entity.csproj": {}
+    "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Entity\\Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FATOŞ\\Desktop\\WebUI\\Core\\Core.csproj": {
+    "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FATOŞ\\Desktop\\WebUI\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\FATOŞ\\Desktop\\WebUI\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\FATOŞ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FATOŞ\\Desktop\\WebUI\\Core\\obj\\",
+        "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Aynur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\FATOŞ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aynur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\FATOŞ\\Desktop\\WebUI\\Entity\\Entity.csproj": {
+    "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FATOŞ\\Desktop\\WebUI\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\FATOŞ\\Desktop\\WebUI\\Entity\\Entity.csproj",
-        "packagesPath": "C:\\Users\\FATOŞ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FATOŞ\\Desktop\\WebUI\\Entity\\obj\\",
+        "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\Aynur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\FATOŞ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aynur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,8 +85,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\FATOŞ\\Desktop\\WebUI\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\FATOŞ\\Desktop\\WebUI\\Core\\Core.csproj"
+              "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Core\\Core.csproj"
               }
             }
           }
@@ -114,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

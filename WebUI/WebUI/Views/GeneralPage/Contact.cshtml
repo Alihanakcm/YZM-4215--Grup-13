@@ -1,0 +1,70 @@
+﻿@model WebUI.Models.Form
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Iletisim";
+}
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h3>İLETİŞİM</h3>
+            <p>Her türlü soru, görüş ve önerilerinizi bize bu formu doldurarak bildirebilirsiniz.</p>
+        </div>
+
+        <div class="row contact-info">
+
+            <div class="col-md-4">
+                <div class="contact-address">
+                    <i class="ion-ios-location-outline"></i>
+                    <h3>Adres</h3>
+                    <address>MANSUROĞLU MAH. 273/2 SOKAK NO:9 DAİRE:2 BAYRAKLI İZMİR</address>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-phone">
+                    <i class="ion-ios-telephone-outline"></i>
+                    <h3>Telefon</h3>
+                    <p><a href="tel:05467669700" title="telefonno">(0546) 766 97 00</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-email">
+                    <i class="ion-ios-email-outline"></i>
+                    <h3>E-mail</h3>
+                    <p><a href="fatoseraslan275@gmail.com" title="mailadres">fatoseraslan275@gmail.com</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form">
+            <form asp-controller="GeneralPage" asp-action="IletisimPosta" method="post" role="form" class="php-email-form" title="iletisimformu">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input asp-for="Name" type="text" name="Name" value="" class="form-control" id="Name" placeholder="Ad-Soyad" required="" data-rule="minlen:4" data-msg="Lütfen en az 4 karakter girin" />
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input asp-for="Email" type="email" class="form-control" name="Email" value=""  id="Email" placeholder="Mail Adresiniz" required="" data-rule="email" data-msg="lütfen geçerli eposta adresini giriniz" />
+                        <div class="validate"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input asp-for="Subject" type="text" class="form-control" name="Subject"  value="" id="Subject" placeholder="Konu" required="" data-rule="minlen:4" data-msg="Lütfen en az 8 karakter girin" />
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                    <textarea asp-for="Message" class="form-control" name="Message"  value=""  rows="5" data-rule="required" placeholder="Mesajınız" required=""></textarea>
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                        <input type="submit" value="Gönder">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section><!-- End Contact Section -->

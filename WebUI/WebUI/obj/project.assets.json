@@ -9152,25 +9152,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BEYZA\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Aynur\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BEYZA\\Desktop\\WebUI\\WebUI\\WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\WebUI\\WebUI.csproj",
       "projectName": "WebUI",
-      "projectPath": "C:\\Users\\BEYZA\\Desktop\\WebUI\\WebUI\\WebUI.csproj",
-      "packagesPath": "C:\\Users\\BEYZA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BEYZA\\Desktop\\WebUI\\WebUI\\obj\\",
+      "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\WebUI\\WebUI.csproj",
+      "packagesPath": "C:\\Users\\Aynur\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\WebUI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\BEYZA\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Aynur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -9182,14 +9177,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\BEYZA\\Desktop\\WebUI\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\BEYZA\\Desktop\\WebUI\\Business\\Business.csproj"
+            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Business\\Business.csproj"
             },
-            "C:\\Users\\BEYZA\\Desktop\\WebUI\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\BEYZA\\Desktop\\WebUI\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\BEYZA\\Desktop\\WebUI\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\BEYZA\\Desktop\\WebUI\\Entity\\Entity.csproj"
+            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Entity\\Entity.csproj"
             }
           }
         }
@@ -9238,7 +9233,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

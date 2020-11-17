@@ -10,8 +10,10 @@ namespace DataAccess.Concrete.EntityFramework
         public virtual DbSet<Tbl_Category> Tbl_Category { get; set; }
         public virtual DbSet<Tbl_List> Tbl_List { get; set; }
         public virtual DbSet<Tbl_Member> Tbl_Member { get; set; }
+        public virtual DbSet<Tbl_City> Tbl_City { get; set; }
         public virtual DbSet<Tbl_Request> Tbl_Request { get; set; }
         public virtual DbSet<Tbl_RequestState> Tbl_RequstState { get; set; }
+        public virtual DbSet<View_AdGeneralInfo> View_AdGeneralInfo { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
