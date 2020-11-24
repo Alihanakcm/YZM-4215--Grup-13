@@ -1,0 +1,9 @@
+C:\Users\HULYA\Desktop\Fatura Takip Sistemi\Core\bin\Release\netcoreapp3.1\Core.deps.json
+C:\Users\HULYA\Desktop\Fatura Takip Sistemi\Core\bin\Release\netcoreapp3.1\Core.dll
+C:\Users\HULYA\Desktop\Fatura Takip Sistemi\Core\bin\Release\netcoreapp3.1\Core.pdb
+C:\Users\HULYA\Desktop\Fatura Takip Sistemi\Core\obj\Release\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\HULYA\Desktop\Fatura Takip Sistemi\Core\obj\Release\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\HULYA\Desktop\Fatura Takip Sistemi\Core\obj\Release\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\HULYA\Desktop\Fatura Takip Sistemi\Core\obj\Release\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\HULYA\Desktop\Fatura Takip Sistemi\Core\obj\Release\netcoreapp3.1\Core.dll
+C:\Users\HULYA\Desktop\Fatura Takip Sistemi\Core\obj\Release\netcoreapp3.1\Core.pdb
