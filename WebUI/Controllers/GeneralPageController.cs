@@ -23,9 +23,11 @@ namespace WebUI.Controllers
         private IView_AdInfoService _AdInfoService;
         private IView_MessageService _MessageService;
         private ITbl_MessageService _tbl_MessageService;
+        private ITbl_RequestService _RequestService;
 
-        public GeneralPageController(ITbl_MemberService tbl_MemberService, ITbl_AdService tbl_AdService, ITbl_MessageService Tbl_MessageService, IView_AdInfoService View_AdInfoService, IView_MessageService View_MessageService)
+        public GeneralPageController(ITbl_MemberService tbl_MemberService, ITbl_RequestService tbl_RequestService, ITbl_AdService tbl_AdService, ITbl_MessageService Tbl_MessageService, IView_AdInfoService View_AdInfoService, IView_MessageService View_MessageService)
         {
+            _RequestService = tbl_RequestService;
             _MemberService = tbl_MemberService;
             _AdService = tbl_AdService;
             _AdInfoService = View_AdInfoService;
@@ -103,15 +105,16 @@ namespace WebUI.Controllers
                     
                     MessageDetailViewModel model = new MessageDetailViewModel();
                     model.allMessages = _MessageService.GetAll().Where(x => x.MemberID == memberID).ToList();
-                    model.allMessages = _MessageService.GetAll().Where(x => x.MemberID == memberID || x.RequestMemberID == memberID).OrderBy(x =>x.RequestID).ToList();
-              
-                    if (id == 0)
-                        model.messages = _tbl_MessageService.GetAll().Where(x => x.MessageRequestID == model.allMessages[0].MessageRequestID).ToList();
-                     else
-                        model.messages = _tbl_MessageService.GetAll().Where(x => x.MessageRequestID == id).ToList();
-
+                    model.allMessages = _MessageService.GetAll().Where(x => x.MemberID == memberID || x.RequestMemberID == memberID).OrderBy(x =>x.RequestID).OrderByDescending(x => x.MessageDate).ToList();
+                    if (model.allMessages != null && model.allMessages.Count != 0)
+                    {
+                        if (id == 0)
+                            model.messages = _tbl_MessageService.GetAll().Where(x => x.MessageRequestID == model.allMessages[0].MessageRequestID).ToList();
+                        else
+                            model.messages = _tbl_MessageService.GetAll().Where(x => x.MessageRequestID == id).ToList();
+                    }
                     model.memberID = memberID;
-
+                    
                     return View(model);
                 }
             }
@@ -119,7 +122,7 @@ namespace WebUI.Controllers
         }
 
         [Ignore]
-        public ActionResult MessageSend(int id)
+        public ActionResult MessageSend(MessageDetailViewModel model)
         {
             var session = HttpContext.Session;
             if (session != null)
@@ -130,18 +133,51 @@ namespace WebUI.Controllers
                     TempData["memberID"] = HttpContext.Session.GetString("memberID");
                     int memberID = Convert.ToInt32(TempData["memberID"].ToString());
 
-                    MessageDetailViewModel model = new MessageDetailViewModel();
-                    model.allMessages = _MessageService.GetAll().Where(x => x.MemberID == memberID).ToList();
-                    model.allMessages = _MessageService.GetAll().Where(x => x.MemberID == memberID || x.RequestMemberID == memberID).OrderBy(x => x.RequestID).ToList();
-
-                    if (id == 0)
-                        model.messages = _tbl_MessageService.GetAll().Where(x => x.MessageRequestID == model.allMessages[0].MessageRequestID).ToList();
-                    else
-                        model.messages = _tbl_MessageService.GetAll().Where(x => x.MessageRequestID == id).ToList();
-
-                    model.memberID = memberID;
-
-                    return View(model);
+                    Tbl_Message message = model.messageSend;
+                    message.SenderMemberID = memberID;
+                    message.MessageDate = DateTime.Now;
+                    _tbl_MessageService.Add(message);
+                    return RedirectToAction("Message", "GeneralPage", new { id = message.MessageRequestID});
+                }
+            }
+            return RedirectToAction("Index", "GeneralPage");
+        }
+        [Ignore]
+        [HttpGet]
+        public ActionResult RequestNewAdMessage(int id)
+        {
+            var session = HttpContext.Session;
+            if (session != null)
+            {
+                HttpContext.Session.TryGetValue("token", out var result);
+                if (result != null)
+                {
+                    TempData["isLoggedIn"] = HttpContext.Session.GetString("token");
+                    TempData["memberID"] = HttpContext.Session.GetString("memberID");
+                    int memberID = Convert.ToInt32(TempData["memberID"].ToString());
+                    Tbl_Ad ad = _AdService.Get(id);
+                    Tbl_Request Request = _RequestService.GetAll().Where(x => x.AdID == id && x.RequestMemberID == memberID).LastOrDefault();
+                    if (Request == null && ad.MemberID != memberID)
+                    {
+                        Tbl_Request newRequest = new Tbl_Request()
+                        {
+                            AdID = id,
+                            RequestMemberID = memberID,
+                            RequestStateID = 1
+                        };
+                        _RequestService.Add(newRequest);
+                    }
+                    Tbl_Request lastRequest = _RequestService.GetAll().LastOrDefault();
+                    Tbl_Message message = new Tbl_Message
+                    {
+                        SenderMemberID = memberID,
+                        Message = "Konu Başlığı: " + ad.AdTitle,
+                        MessageDate = DateTime.Now,
+                        MessageRequestID = lastRequest.RequestID,
+                    };
+                    _tbl_MessageService.Add(message);
+                    Tbl_Message lastMessage = _tbl_MessageService.GetAll().LastOrDefault();
+                    return RedirectToAction("Message", "GeneralPage", new { id = lastMessage.MessageRequestID });
                 }
             }
             return RedirectToAction("Index", "GeneralPage");

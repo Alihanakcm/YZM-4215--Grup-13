@@ -209,7 +209,6 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <form asp-controller="MemberPage" asp-action="RequestNewAd" method="get" >
                         <div class="modal-body">
                             <div class="wrapper row">
                                 <div class="preview col-md-6">
@@ -255,11 +254,10 @@
                             </div>
                             <div class="wrapper row align-items-center">
                                 <div class="action">
-                                    <input class="add-to-cart btn btn-default" type="submit" asp-route-id="@item.AdID" value="İstek Gönder">
+                                    <a class="add-to-cart btn btn-default" type="submit"  asp-controller="GeneralPage" asp-action="RequestNewAdMessage" asp-route-id="@item.AdID" >Mesaj Gönder</a>
                                 </div>
                             </div>
                         </div>
-                    </form>
                 </div>
             </div>
         </div>
