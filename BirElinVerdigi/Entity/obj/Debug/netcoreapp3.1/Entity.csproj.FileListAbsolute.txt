@@ -1,0 +1,108 @@
+C:\Users\FATOŞ\Desktop\BirElinVerdigi\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\FATOŞ\Desktop\BirElinVerdigi\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\FATOŞ\Desktop\BirElinVerdigi\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\FATOŞ\Desktop\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\FATOŞ\Desktop\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\FATOŞ\Desktop\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\FATOŞ\Desktop\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\FATOŞ\Desktop\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\FATOŞ\Desktop\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\FATOŞ\Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\FATOŞ\Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\FATOŞ\Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\FATOŞ\Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\FATOŞ\Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\FATOŞ\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\FATOŞ\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\FATOŞ\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\FATOŞ\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\FATOŞ\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CopyComplete
+C:\Users\FATOŞ\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\FATOŞ\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Entity\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Entity\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CopyComplete
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\FATOŞ\Desktop\Bir-Elin-Verdigi\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Entity\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Entity\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CopyComplete
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Aynur\OneDrive\Masaüstü\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\BEYZA\Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\BEYZA\Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\BEYZA\Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\BEYZA\Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\BEYZA\Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\BEYZA\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\BEYZA\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\BEYZA\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\BEYZA\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\BEYZA\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CopyComplete
+C:\Users\BEYZA\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\BEYZA\Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Entity\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CopyComplete
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Aynur\Downloads\Telegram Desktop\WebUI\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\Bir Elin Verdiği\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\Aynur\OneDrive\Masaüstü\Bir Elin Verdiği\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Aynur\OneDrive\Masaüstü\Bir Elin Verdiği\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\Bir Elin Verdiği\Entity\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\OneDrive\Masaüstü\Bir Elin Verdiği\Entity\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\Aynur\OneDrive\Masaüstü\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\Aynur\OneDrive\Masaüstü\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CopyComplete
+C:\Users\Aynur\OneDrive\Masaüstü\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Aynur\OneDrive\Masaüstü\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Entity\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Entity\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CopyComplete
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\FATOŞ\Desktop\aynur\Bir Elin Verdiği\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\FATOŞ\Desktop\BirElinVerdigi\Entity\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\FATOŞ\Desktop\BirElinVerdigi\Entity\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\FATOŞ\Desktop\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CopyComplete
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Entity\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Entity\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CopyComplete
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
