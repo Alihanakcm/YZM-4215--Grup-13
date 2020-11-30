@@ -29,12 +29,12 @@ Anasayfada bulunan harita üzerinden istenilen şehirdeki ilanlar kolayca listel
 
 -----
 ## İsteklerim
-İsteklerim sayfasında istek yaptığınız ve size gelen istekler görüntülenebilir.
+İsteklerim sayfasında istek yaptığınız istekler ve size gelen istekler görüntülenebilir.
 ![photo_2020-11-30_19-11-25](https://user-images.githubusercontent.com/42321382/100636504-d8050d80-3342-11eb-8704-0a9a629aa4bd.jpg)
 
 -----
 ## Mesaj
-Konu başlığı üzerinden ilan sahibi ile mesaj ile iletişim kurulabilir.
+Konu başlığı üzerinden ilan sahibi ile mesaj üzerinden iletişim kurulabilir.
 ![photo_2020-11-30_19-11-28](https://user-images.githubusercontent.com/42321382/100636512-d9ced100-3342-11eb-9f06-cb52be2d0216.jpg)
 
 -----
