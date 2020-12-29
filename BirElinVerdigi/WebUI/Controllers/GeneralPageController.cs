@@ -299,7 +299,46 @@ namespace WebUI.Controllers
             }
             return RedirectToAction("Contact", "GeneralPage");
         }
+        [HttpPost]
+        [Ignore]
+        public ActionResult sendPassword(Tbl_Member member)
+        {
+            Tbl_Member memberInfo = _MemberService.GetAll().Where(x => x.MemberMail == member.MemberMail).LastOrDefault();
+            try
+            {
+                string nameSurname = memberInfo.MemberName;
+                string mail = memberInfo.MemberMail;
+                string message = "Şifreniz: " + memberInfo.MemberPassword;
+                string subject = "Şifremi Unuttum";
 
+                var from = new MailAddress("aynur@megyazilim.com.tr");
+                var toAddres = new MailAddress(memberInfo.MemberMail);
+                string content = "AD: " + nameSurname;
+                content += "<br>MAİL: " + mail;
+                content += "<br>KONU: " + subject;
+                content += "<br>Mesaj: " + message;
+                using (var smpt = new SmtpClient
+                {
+                    Host = "smtp.yandex.com",
+                    Port = 587,
+                    EnableSsl = true,
+                    DeliveryMethod = SmtpDeliveryMethod.Network,
+                    UseDefaultCredentials = false,
+                    Credentials = new System.Net.NetworkCredential("aynur@megyazilim.com.tr", "Aynur20")
+                })
+                {
+                    using (var mesaj = new MailMessage(from, toAddres) { Subject = subject, Body = content })
+                    {
+                        mesaj.IsBodyHtml = true;
+                        smpt.Send(mesaj);
+                    }
+                }
+            }
+            catch
+            {
+            }
+            return RedirectToAction("Contact", "GeneralPage");
+        }
         [Ignore]
         [Route("Ilanlar")]
         public ActionResult Ad(int id)
