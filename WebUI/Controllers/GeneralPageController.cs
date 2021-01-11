@@ -102,10 +102,10 @@ namespace WebUI.Controllers
                 {
                     TempData["memberID"] = HttpContext.Session.GetString("memberID");
                     int memberID = Convert.ToInt32(TempData["memberID"].ToString());
-                    
+
                     MessageDetailViewModel model = new MessageDetailViewModel();
                     model.allMessages = _MessageService.GetAll().Where(x => x.MemberID == memberID).ToList();
-                    model.allMessages = _MessageService.GetAll().Where(x => x.MemberID == memberID || x.RequestMemberID == memberID).OrderBy(x =>x.RequestID).OrderByDescending(x => x.MessageDate).ToList();
+                    model.allMessages = _MessageService.GetAll().Where(x => x.MemberID == memberID || x.RequestMemberID == memberID).OrderBy(x => x.RequestID).OrderByDescending(x => x.MessageDate).ToList();
                     if (model.allMessages != null && model.allMessages.Count != 0)
                     {
                         if (id == 0)
@@ -114,7 +114,7 @@ namespace WebUI.Controllers
                             model.messages = _tbl_MessageService.GetAll().Where(x => x.MessageRequestID == id).ToList();
                     }
                     model.memberID = memberID;
-                    
+
                     return View(model);
                 }
             }
@@ -137,7 +137,26 @@ namespace WebUI.Controllers
                     message.SenderMemberID = memberID;
                     message.MessageDate = DateTime.Now;
                     _tbl_MessageService.Add(message);
-                    return RedirectToAction("Message", "GeneralPage", new { id = message.MessageRequestID});
+                    return RedirectToAction("Message", "GeneralPage", new { id = message.MessageRequestID });
+                }
+            }
+            return RedirectToAction("Index", "GeneralPage");
+        }
+        [Ignore]
+        public ActionResult MessageDelete(int id)
+        {
+            var session = HttpContext.Session;
+            if (session != null)
+            {
+                HttpContext.Session.TryGetValue("token", out var result);
+                if (result != null)
+                {
+                    TempData["memberID"] = HttpContext.Session.GetString("memberID");
+                    int memberID = Convert.ToInt32(TempData["memberID"].ToString());
+
+                    Tbl_Message message = _tbl_MessageService.Get(id);
+                    _tbl_MessageService.Delete(message);
+                    return RedirectToAction("Message", "GeneralPage", new { id = message.MessageRequestID });
                 }
             }
             return RedirectToAction("Index", "GeneralPage");
@@ -157,6 +176,7 @@ namespace WebUI.Controllers
                     int memberID = Convert.ToInt32(TempData["memberID"].ToString());
                     Tbl_Ad ad = _AdService.Get(id);
                     Tbl_Request Request = _RequestService.GetAll().Where(x => x.AdID == id && x.RequestMemberID == memberID).LastOrDefault();
+                    Tbl_Message lastMessage = new Tbl_Message();
                     if (Request == null && ad.MemberID != memberID)
                     {
                         Tbl_Request newRequest = new Tbl_Request()
@@ -166,6 +186,8 @@ namespace WebUI.Controllers
                             RequestStateID = 1
                         };
                         _RequestService.Add(newRequest);
+
+                       
                     }
                     Tbl_Request lastRequest = _RequestService.GetAll().LastOrDefault();
                     Tbl_Message message = new Tbl_Message
@@ -176,7 +198,54 @@ namespace WebUI.Controllers
                         MessageRequestID = lastRequest.RequestID,
                     };
                     _tbl_MessageService.Add(message);
-                    Tbl_Message lastMessage = _tbl_MessageService.GetAll().LastOrDefault();
+                    lastMessage = _tbl_MessageService.GetAll().LastOrDefault();
+
+                    return RedirectToAction("Message", "GeneralPage", new { id = lastMessage.MessageRequestID });
+                }
+            }
+            return RedirectToAction("Index", "GeneralPage");
+        }
+        [Ignore]
+        [HttpGet]
+        public ActionResult MemberRequestMessage(int id)
+        {
+            var session = HttpContext.Session;
+            if (session != null)
+            {
+                HttpContext.Session.TryGetValue("token", out var result);
+                if (result != null)
+                {
+                    TempData["isLoggedIn"] = HttpContext.Session.GetString("token");
+                    TempData["memberID"] = HttpContext.Session.GetString("memberID");
+                    int memberID = Convert.ToInt32(TempData["memberID"].ToString());
+                    Tbl_Ad ad = _AdService.Get(id);
+                    Tbl_Request Request = _RequestService.GetAll().Where(x => x.AdID == id && x.RequestMemberID == memberID).LastOrDefault();
+                    Tbl_Message messagednm = _tbl_MessageService.GetAll().Where(x => x.MessageRequestID == Request.RequestID).LastOrDefault();
+                    Tbl_Message lastMessage = new Tbl_Message();
+                    if (messagednm == null)
+                    {
+                        Tbl_Request newRequest = new Tbl_Request()
+                        {
+                            AdID = id,
+                            RequestMemberID = memberID,
+                            RequestStateID = 1
+                        };
+                        _RequestService.Add(newRequest);
+
+                        Tbl_Request lastRequest = _RequestService.GetAll().LastOrDefault();
+                        Tbl_Message message = new Tbl_Message
+                        {
+                            SenderMemberID = memberID,
+                            Message = "Konu Başlığı: " + ad.AdTitle,
+                            MessageDate = DateTime.Now,
+                            MessageRequestID = lastRequest.RequestID,
+                        };
+                        _tbl_MessageService.Add(message);
+                        lastMessage = _tbl_MessageService.GetAll().LastOrDefault();
+                    }
+                    else
+                        lastMessage = _tbl_MessageService.GetAll().Where(x => x.MessageRequestID == Request.RequestID).LastOrDefault();
+
                     return RedirectToAction("Message", "GeneralPage", new { id = lastMessage.MessageRequestID });
                 }
             }
@@ -230,7 +299,46 @@ namespace WebUI.Controllers
             }
             return RedirectToAction("Contact", "GeneralPage");
         }
+        [HttpPost]
+        [Ignore]
+        public ActionResult sendPassword(Tbl_Member member)
+        {
+            Tbl_Member memberInfo = _MemberService.GetAll().Where(x => x.MemberMail == member.MemberMail).LastOrDefault();
+            try
+            {
+                string nameSurname = memberInfo.MemberName;
+                string mail = memberInfo.MemberMail;
+                string message = "Şifreniz: " + memberInfo.MemberPassword;
+                string subject = "Şifremi Unuttum";
 
+                var from = new MailAddress("aynur@megyazilim.com.tr");
+                var toAddres = new MailAddress(memberInfo.MemberMail);
+                string content = "AD: " + nameSurname;
+                content += "<br>MAİL: " + mail;
+                content += "<br>KONU: " + subject;
+                content += "<br>Mesaj: " + message;
+                using (var smpt = new SmtpClient
+                {
+                    Host = "smtp.yandex.com",
+                    Port = 587,
+                    EnableSsl = true,
+                    DeliveryMethod = SmtpDeliveryMethod.Network,
+                    UseDefaultCredentials = false,
+                    Credentials = new System.Net.NetworkCredential("aynur@megyazilim.com.tr", "Aynur20")
+                })
+                {
+                    using (var mesaj = new MailMessage(from, toAddres) { Subject = subject, Body = content })
+                    {
+                        mesaj.IsBodyHtml = true;
+                        smpt.Send(mesaj);
+                    }
+                }
+            }
+            catch
+            {
+            }
+            return RedirectToAction("Contact", "GeneralPage");
+        }
         [Ignore]
         [Route("Ilanlar")]
         public ActionResult Ad(int id)

@@ -63,7 +63,13 @@
                                         <a class="btn btn-danger btn-sm" asp-controller="MemberPage" asp-action="MemberRequestCancel" asp-route-id="@item.RequestID">
                                             <i class="fas fa-trash-alt">
                                             </i>
-                                            iptal
+                                            İptal Et
+                                        </a>
+
+                                        <a class="btn btn-info btn-sm" asp-controller="GeneralPage" asp-action="MemberRequestMessage" asp-route-id="@item.AdID">
+                                            <i class="icofont-ui-message">
+                                            </i>
+                                            Mesaj
                                         </a>
                                     </td>
 
