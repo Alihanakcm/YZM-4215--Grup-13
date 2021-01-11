@@ -12,6 +12,7 @@ namespace Entity.Concrete
         public string Message { get; set; }
         public DateTime MessageDate { get; set; }
         public int MessageRequestID { get; set; }
+        public string RequestMemberNickName { get; set; }
         public string RequestMemberName { get; set; }
         public string RequestMemberSurname { get; set; }
         public string AdTitle { get; set; }
@@ -19,6 +20,7 @@ namespace Entity.Concrete
         public string AdInfo { get; set; }
         public string CategoryName { get; set; }
         public string MemberName { get; set; }
+        public string MemberNickName { get; set; }
         public int MemberID { get; set; }
         public string MemberSurname { get; set; }
         public string MemberMail { get; set; }

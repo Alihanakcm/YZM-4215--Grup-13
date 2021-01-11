@@ -642,11 +642,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\Aynur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Core\\obj\\",
+      "outputPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aynur\\AppData\\Roaming\\NuGet\\NuGet.Config",

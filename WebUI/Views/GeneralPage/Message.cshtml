@@ -35,7 +35,14 @@
                                         <div class="chat_people">
                                             <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
                                             <div class="chat_ib">
-                                                <h5>@item.RequestMemberName @item.RequestMemberSurname <span class="chat_date">@item.MessageDate.ToString("dd.MM.yy")</span></h5>
+                                                @if (item.RequestMemberID == Model.memberID)
+                                                {
+                                                    <h5>@item.MemberName @item.MemberSurname @*Aynur~ @item.MemberNickName*@<span class="chat_date">@item.MessageDate.ToString("dd.MM.yy")</span></h5>
+                                                }
+                                                else
+                                                {
+                                                    <h5>@item.RequestMemberName @item.RequestMemberSurname ~ @item.RequestMemberNickName<span class="chat_date">@item.MessageDate.ToString("dd.MM.yy")</span></h5>
+                                                }
                                                 <p>
                                                     @item.Message
                                                 </p>

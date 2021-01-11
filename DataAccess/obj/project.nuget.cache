@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H1LpuxYixp+FJXZQzE1DXjEoEdnPjJPHtoO4gaKUviz2x4b6dMD05e+t+bMoOW4wDba4aBntimKlTcmnNFAM4Q==",
+  "dgSpecHash": "SCnRvFRulzeaVcoAV/rkJGUncrWjjS4DDaAm9FcqL3uwF4cYqlSkrx1Om2R3fahdA2W3tqJyxdE1c8EB1TRuYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aynur\\.nuget\\packages\\localstorage\\2.0.0\\localstorage.2.0.0.nupkg.sha512",
     "C:\\Users\\Aynur\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",

@@ -68,6 +68,7 @@ namespace WebUI.Controllers
                     Tbl_Ad ad = model.ad;
                     ad.MemberID = memberID;
                     ad.AdState = "akrif";
+                    ad.AdDate = DateTime.Now;
                     _AdService.Add(ad);
                     return RedirectToAction("MemberAdListCrud", "MemberPage");
                 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mzNTk99zHnlrIEU7vF/BuQwJp7iTZrLMdc9Pn38i0kUyVgTvK4npkvO5xPTQ6V7H4Qqp1BropRN3G38YEZMtdA==",
+  "dgSpecHash": "P/D4quKmJWFledwPw6L14azTl9v8OBYiju4zdUMDnuhSyKjLQZjVb0MO0K04zlbG2i+1o0JwVn6rg6fCOhCtmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aynur\\.nuget\\packages\\localstorage\\2.0.0\\localstorage.2.0.0.nupkg.sha512",
     "C:\\Users\\Aynur\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",

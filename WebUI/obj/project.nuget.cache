@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZxRJ1FSWnPfZLodlXEjA7ZgEsy3l5Vuo2MuBR8iZNjBe2JkOyR7zoZDxggRY8jji+XNZMsNqlOEKq6eB02vADA==",
+  "dgSpecHash": "DXuh/v+SPKthlfG32XXdoBlOkXeq/G+KFwRJ/P+jkpSi0y143p5QleEp5c20+SFSErhe9pwc66EVusvNUfPIMQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\WebUI\\WebUI.csproj",
+  "projectFilePath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\WebUI\\WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aynur\\.nuget\\packages\\localstorage\\2.0.0\\localstorage.2.0.0.nupkg.sha512",
     "C:\\Users\\Aynur\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.9\\microsoft.aspnetcore.authentication.jwtbearer.3.1.9.nupkg.sha512",

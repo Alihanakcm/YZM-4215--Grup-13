@@ -9157,11 +9157,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\WebUI\\WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\WebUI\\WebUI.csproj",
       "projectName": "WebUI",
-      "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\WebUI\\WebUI.csproj",
+      "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\WebUI\\WebUI.csproj",
       "packagesPath": "C:\\Users\\Aynur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\WebUI\\obj\\",
+      "outputPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aynur\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9177,14 +9177,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Business\\Business.csproj"
+            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Business\\Business.csproj"
             },
-            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Entity\\Entity.csproj"
+            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Entity\\Entity.csproj"
             }
           }
         }

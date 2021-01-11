@@ -5719,11 +5719,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Business\\Business.csproj",
+      "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\Aynur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Business\\obj\\",
+      "outputPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aynur\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5739,11 +5739,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\BirElinVerdigi\\Entity\\Entity.csproj"
+            "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\Aynur\\OneDrive\\Masaüstü\\Yeni klasör\\BirElinVerdigi\\Entity\\Entity.csproj"
             }
           }
         }
