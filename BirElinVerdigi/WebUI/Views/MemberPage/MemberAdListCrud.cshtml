@@ -14,7 +14,7 @@
     <button type="button" class="btn btn-success btn-round btn-ouutline-success float-right" data-toggle="modal" data-target="#exampleModalCenter">
         <i class="icofont-plus-circle">
         </i>
-        ÜRÜN EKLE
+        İLAN EKLE
 
     </button>
     <div class="container" data-aos="fade-up">
@@ -51,10 +51,10 @@
                                     @*<input type="image" src="~/img/delete.png" class="float-right" value="submit" width="25">*@
                                     <a asp-controller="MemberPage" asp-action="MemberAdDelete" asp-route-id="@item.AdID" class="small-box-footer"><i class="icofont-ui-remove"></i></a>
                                     <figure>
-                                        <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+                                        <img src="~/img/yemek.jpg" class="img-fluid" alt="">
 
                                         <a data-title="food" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
-                                        <a class="link-details" title="Daha Fazla Bilgi" asp-controller="MemberPage" asp-action="RequestNewAd"><i class="ion ion-android-open"></i></a>
+                                        @* Beyza<a data-title="food" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>*@
                                     </figure>
                                 </form>
                                 <div class="portfolio-info">
@@ -72,7 +72,6 @@
                                 <figure>
                                     <img src="~/img/stuff.jpg" class="img-fluid" alt="">
                                     <a title="stuff" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
-                                    <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                 </figure>
 
                                 <div class="portfolio-info">
@@ -91,7 +90,6 @@
                                     <img src="~/img/pet.jpg" class="img-fluid" alt="">
                                     <a title="pet" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
                                     <a asp-controller="MemberPage" asp-action="AdDelete" asp-route-id="@item.AdID"><i class="ion ion-android-delete"></i></a>
-                                    <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                 </figure>
 
                                 <div class="portfolio-info">
@@ -109,7 +107,6 @@
                                 <figure>
                                     <img src="~/img/money.jpg" class="img-fluid" alt="">
                                     <a title="money" class="link-preview" data-toggle="modal" data-target="#editAd_@item.AdID"><i class="ion ion-edit"></i></a>
-                                    <a href="~/img/money.jpg" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                 </figure>
                                 <div class="portfolio-info">
                                     <h4><a href="portfolio-details.html">@item.AdTitle</a></h4>

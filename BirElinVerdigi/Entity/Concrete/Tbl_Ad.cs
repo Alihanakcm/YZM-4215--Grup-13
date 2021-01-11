@@ -1,4 +1,5 @@
 ﻿using Core.Entities;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Entity.Concrete
@@ -14,5 +15,6 @@ namespace Entity.Concrete
         public string AdState { get; set; }
         public int MemberID { get; set; }
         public int AdRoleID { get; set; }
+        public DateTime AdDate { get; set; }
     }
 }

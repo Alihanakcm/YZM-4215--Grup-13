@@ -1,4 +1,5 @@
 ﻿using Core.Entities;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Entity.Concrete
@@ -8,10 +9,12 @@ namespace Entity.Concrete
         [Key]
         public int MemberID { get; set; }
         public int IDNumber { get; set; }
+        public string MemberNickName { get; set; }
         public string MemberName { get; set; }
         public string MemberSurname { get; set; }
         public string MemberMail { get; set; }
         public string MemberPassword { get; set; }
+        public int MemberBlockCount { get; set; }
        
     }
 }

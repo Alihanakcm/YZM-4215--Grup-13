@@ -142,3 +142,35 @@ C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Business\obj\Debug\netcoreapp3
 C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
 C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.dll
 C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.pdb
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Business.dll
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Business.pdb
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.csprojAssemblyReference.cache
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.dll
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Business.dll
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Business.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.csprojAssemblyReference.cache
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.dll
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Business\obj\Debug\netcoreapp3.1\Business.pdb

@@ -187,3 +187,21 @@ C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\C
 C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
 C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.dll
 C:\Users\Aynur\OneDrive\Masaüstü\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\FATOŞ\Desktop\part\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\Aynur\OneDrive\Masaüstü\Yeni klasör\BirElinVerdigi\Core\obj\Debug\netcoreapp3.1\Core.pdb

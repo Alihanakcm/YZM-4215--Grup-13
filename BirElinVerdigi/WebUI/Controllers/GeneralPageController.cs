@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
-using System.Threading.Tasks;
 using Business.Abstract;
 using Entity.Concrete;
 using Microsoft.AspNetCore.Http;
@@ -49,7 +48,7 @@ namespace WebUI.Controllers
         public ActionResult SignInUser(Tbl_Member user)
         {
             Tbl_Member loginData = _MemberService.LoginControlGet(user.IDNumber, user.MemberPassword);
-            if (loginData != null)
+            if (loginData != null && loginData.MemberBlockCount < 3)
             {
                 string token = Guid.NewGuid().ToString() + "æ" + DateTime.Now + "-" + loginData.MemberID;
                 string memberID = loginData.MemberID.ToString();
@@ -59,17 +58,62 @@ namespace WebUI.Controllers
                 ViewBag.Token = token;
                 TempData["isLoggedIn"] = token.ToString();
                 TempData["memberID"] = memberID.ToString();
+                loginData.MemberBlockCount = 0;
+                _MemberService.Update(loginData);
                 return RedirectToAction("Index");
             }
             else
             {
+                //loginData = _MemberService.GetAll().Where(x => x.IDNumber == user.IDNumber).LastOrDefault();
+                //if(loginData != null )
+                //{ 
+                //loginData.MemberBlockCount++;
+                //    if (loginData.MemberBlockCount >= 3)
+                //    {
+                //        var sifre = Guid.NewGuid().ToString().Split('-');
+                //        loginData.MemberPassword = sifre[0];
+
+                //        string nameSurname = loginData.MemberName;
+                //        string mail = loginData.MemberMail;
+                //        string message = "Yeni Şifreniz: " + loginData.MemberPassword + "ile sisteme yeniden giriş yapabilirsiniz.";
+                //        string subject = "3 Defa Hatalı Girilen Şİfre";
+
+                //        var from = new MailAddress("aynur@megyazilim.com.tr");
+                //        var toAddres = new MailAddress(loginData.MemberMail);
+                //        string content = "AD: " + nameSurname;
+                //        content += "<br>MAİL: " + mail;
+                //        content += "<br>KONU: " + subject;
+                //        content += "<br>Mesaj: " + message;
+                //        using (var smpt = new SmtpClient
+                //        {
+                //            Host = "smtp.yandex.com",
+                //            Port = 587,
+                //            EnableSsl = true,
+                //            DeliveryMethod = SmtpDeliveryMethod.Network,
+                //            UseDefaultCredentials = false,
+                //            Credentials = new System.Net.NetworkCredential("aynur@megyazilim.com.tr", "Aynur20")
+                //        })
+                //        {
+                //            using (var mesaj = new MailMessage(from, toAddres) { Subject = subject, Body = content })
+                //            {
+                //                mesaj.IsBodyHtml = true;
+                //                smpt.Send(mesaj);
+                //            }
+                //        }
+                //        loginData.MemberBlockCount = 0;
+                //    }
+                //    _MemberService.Update(loginData);
+                //    return RedirectToAction("Index", "GeneralPage");
+
+                //}
                 return RedirectToAction("Index", "GeneralPage");
             }
-        }
+        } 
         [Ignore]
         [HttpPost]
         public ActionResult MemberRecord(Tbl_Member model)
         {
+            model.MemberBlockCount = 0;
             _MemberService.Add(model);
             return RedirectToAction("Index");
 
@@ -156,7 +200,13 @@ namespace WebUI.Controllers
 
                     Tbl_Message message = _tbl_MessageService.Get(id);
                     _tbl_MessageService.Delete(message);
+                    int count = _tbl_MessageService.GetAll().Where(x => x.MessageRequestID == message.MessageRequestID && x.SenderMemberID == message.SenderMemberID).Count();
+                  if(count>0)
                     return RedirectToAction("Message", "GeneralPage", new { id = message.MessageRequestID });
+
+                    return RedirectToAction("Message", "GeneralPage");
+
+
                 }
             }
             return RedirectToAction("Index", "GeneralPage");
@@ -341,7 +391,7 @@ namespace WebUI.Controllers
         }
         [Ignore]
         [Route("Ilanlar")]
-        public ActionResult Ad(int id)
+        public ActionResult Ad(int id, int data)
         {
             var session = HttpContext.Session;
             if (session != null)
@@ -356,6 +406,11 @@ namespace WebUI.Controllers
                         Ads = _AdInfoService.GetAll();
                     else
                         Ads = _AdInfoService.GetAll().Where(x => x.CityID == id).ToList();
+
+                    if(data == 1)
+                        Ads = Ads.OrderBy(x => x.AdDate).ToList();
+                    else if (data == 2)
+                        Ads = Ads.OrderByDescending(x => x.AdDate).ToList();
 
                     return View(Ads);
                 }
