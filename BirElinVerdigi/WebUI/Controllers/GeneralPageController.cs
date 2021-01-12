@@ -64,48 +64,48 @@ namespace WebUI.Controllers
             }
             else
             {
-                //loginData = _MemberService.GetAll().Where(x => x.IDNumber == user.IDNumber).LastOrDefault();
-                //if(loginData != null )
-                //{ 
-                //loginData.MemberBlockCount++;
-                //    if (loginData.MemberBlockCount >= 3)
-                //    {
-                //        var sifre = Guid.NewGuid().ToString().Split('-');
-                //        loginData.MemberPassword = sifre[0];
+                loginData = _MemberService.GetAll().Where(x => x.IDNumber == user.IDNumber).LastOrDefault();
+                if(loginData != null )
+                { 
+                loginData.MemberBlockCount++;
+                    if (loginData.MemberBlockCount >= 3)
+                    {
+                        var sifre = Guid.NewGuid().ToString().Split('-');
+                        loginData.MemberPassword = sifre[0];
 
-                //        string nameSurname = loginData.MemberName;
-                //        string mail = loginData.MemberMail;
-                //        string message = "Yeni Şifreniz: " + loginData.MemberPassword + "ile sisteme yeniden giriş yapabilirsiniz.";
-                //        string subject = "3 Defa Hatalı Girilen Şİfre";
+                        string nameSurname = loginData.MemberName;
+                        string mail = loginData.MemberMail;
+                        string message = "Yeni Şifreniz: " + loginData.MemberPassword + "ile sisteme yeniden giriş yapabilirsiniz.";
+                        string subject = "3 Defa Hatalı Girilen Şİfre";
 
-                //        var from = new MailAddress("aynur@megyazilim.com.tr");
-                //        var toAddres = new MailAddress(loginData.MemberMail);
-                //        string content = "AD: " + nameSurname;
-                //        content += "<br>MAİL: " + mail;
-                //        content += "<br>KONU: " + subject;
-                //        content += "<br>Mesaj: " + message;
-                //        using (var smpt = new SmtpClient
-                //        {
-                //            Host = "smtp.yandex.com",
-                //            Port = 587,
-                //            EnableSsl = true,
-                //            DeliveryMethod = SmtpDeliveryMethod.Network,
-                //            UseDefaultCredentials = false,
-                //            Credentials = new System.Net.NetworkCredential("aynur@megyazilim.com.tr", "Aynur20")
-                //        })
-                //        {
-                //            using (var mesaj = new MailMessage(from, toAddres) { Subject = subject, Body = content })
-                //            {
-                //                mesaj.IsBodyHtml = true;
-                //                smpt.Send(mesaj);
-                //            }
-                //        }
-                //        loginData.MemberBlockCount = 0;
-                //    }
-                //    _MemberService.Update(loginData);
-                //    return RedirectToAction("Index", "GeneralPage");
+                        var from = new MailAddress("aynur@megyazilim.com.tr");
+                        var toAddres = new MailAddress(loginData.MemberMail);
+                        string content = "AD: " + nameSurname;
+                        content += "<br>MAİL: " + mail;
+                        content += "<br>KONU: " + subject;
+                        content += "<br>Mesaj: " + message;
+                        using (var smpt = new SmtpClient
+                        {
+                            Host = "smtp.yandex.com",
+                            Port = 587,
+                            EnableSsl = true,
+                            DeliveryMethod = SmtpDeliveryMethod.Network,
+                            UseDefaultCredentials = false,
+                            Credentials = new System.Net.NetworkCredential("aynur@megyazilim.com.tr", "Aynur20")
+                        })
+                        {
+                            using (var mesaj = new MailMessage(from, toAddres) { Subject = subject, Body = content })
+                            {
+                                mesaj.IsBodyHtml = true;
+                                smpt.Send(mesaj);
+                            }
+                        }
+                        loginData.MemberBlockCount = 0;
+                    }
+                    _MemberService.Update(loginData);
+                    return RedirectToAction("Index", "GeneralPage");
 
-                //}
+                }
                 return RedirectToAction("Index", "GeneralPage");
             }
         } 
